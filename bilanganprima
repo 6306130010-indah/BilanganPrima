@@ -14,7 +14,8 @@ int main()
     cin >> angka;
     cout << "masukkan angka akhir : " << endl;
     cin >> angka;
-
+    x = angka+angka;
+    cout << "hasil penjumlahan dari bilangan prima tersebut adalah " x<<"";
     for (x = 2; x<=angka; x++){
     test = 0;
     for (i = 2; i<x; i++)
@@ -25,9 +26,9 @@ int main()
         {
             cout << x<<",";
         }}
-        {
-            cout << endl;
-        }
+
     }
+
+
     return 0;
 }
