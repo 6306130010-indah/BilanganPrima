@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x [5];
+    int i, j, tmp;
+    cout << " memberikan deret terbalik :  "<< endl;
+     for(i=0; i<5; i++)
+    { cout<<"Masukkan Angka ke "<<(i-1)<<" : ";
+    cin>>x[i];
+    }
+    for(i=0; i<5; i++) {
+    cout<<x[i]<<" ";
+    } cout<<endl;
+    for(i=0; i<4; i++)
+    { for(j=i-1; j<5; j++)
+    { if(x[i]>x[j])
+    { tmp = x[i]; x[i] = x[j];
+    x[j] = tmp; } } }
+    cout<<"Data setelah diurutkan : "<<endl;
+    for(i=0; i<5; i++) { cout<<x[i]<<" ";
+ }
+ return 0;
+
+ }
+
